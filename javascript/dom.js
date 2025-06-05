@@ -3,9 +3,9 @@
 
 
 // //how to select 
-1 id selector= used to select a single HTML element by its ID.
-const selectedH1= document.getElementById("myh1");
-console.log(selectedH1);
+// 1 id selector= used to select a single HTML element by its ID.
+// const selectedH1= document.getElementById("myh1");
+// console.log(selectedH1);
 
 
 // //2 using class= used to select one or more HTML elements that have the same class name.
@@ -64,6 +64,15 @@ selecth1.innerText="updated h1 using inner text";
 
 const content=document.getElementById("my1")
 function ChangeContent(){
-    const chnage=prompt("enter ");
-    selectedH1.innerHTML="This is first dom manipulation"
+    const chnage=prompt("enter somthing");
+    selectedH1.innerHTML=chnage;
+
+}
+
+// 2 when we clixk on button then change the color
+
+const h1=document.getElementById("heading");
+function changeColor(){
+    h1.style.color="blue";
+
 }
